@@ -1,0 +1,342 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  padding: 0 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Home .Carousel {
+  width: 100%;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+.Home .Carousel-Image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.Home .Carousel-Image img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 2rem;
+}
+.Home .Carousel-dots-cont {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  left: 0;
+  bottom: 0;
+  padding: 3rem;
+}
+.Home .Carousel-dots-cont .carousel-dots {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #bbbbbb;
+}
+.Home .Carousel-dots-cont .active {
+  width: 4rem;
+  background-color: #e48040;
+}
+.Home .Carousel .arrow {
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: rgba(20, 20, 20, 0.968627451);
+  padding: 1.3rem;
+  background-color: var(--gray-1);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+.Home .Carousel .arrow:hover {
+  background: var(--gray-3);
+  box-shadow: 0 7px 29px 0 var(--gray-3);
+}
+.Home .Carousel .left {
+  left: 0;
+}
+.Home .Carousel .right {
+  transform: translate(50%, -50%);
+  right: 0;
+}
+.Home .CategoriesInter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+  padding: 10rem 8rem;
+  padding-bottom: 6rem;
+}
+.Home .CategoriesInter-Header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Home .CategoriesInter-Header .mainHeader {
+  color: var(--primary-text-black);
+  font-family: Satoshi, sans-serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.Home .CategoriesInter-Header .mainHeader span {
+  color: #e48040;
+}
+.Home .CategoriesInter-Header .bgHeader {
+  color: rgba(228, 128, 64, 0.28);
+  font-family: Satoshi, sans-serif;
+  font-size: 9.6rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: -0.5rem;
+  bottom: 0;
+}
+.Home .CategoriesInter-Header p {
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+  line-height: normal;
+  color: #003f88;
+  cursor: pointer;
+  z-index: 2;
+}
+.Home .CategoriesInter-Header p:hover {
+  text-decoration: underline;
+}
+.Home .CategoriesInter-Cont {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+.Home .CategoriesInter-Cont .Option {
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--gray-2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.Home .CategoriesInter-Cont .Option:hover {
+  transform: scale(1.05);
+  background-color: var(--gray-3);
+}
+.Home .CategoriesInter-Cont .Option img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.Home .CategoriesInter-Cont .Option p {
+  color: var(--primary-text-black);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Home .BestSeller {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+  padding: 10rem 8rem;
+  padding-top: 6rem;
+}
+.Home .BestSeller-Header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Home .BestSeller-Header .mainHeader {
+  color: var(--primary-text-black);
+  font-family: Satoshi, sans-serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.Home .BestSeller-Header .mainHeader span {
+  color: #e48040;
+}
+.Home .BestSeller-Header .bgHeader {
+  color: rgba(228, 128, 64, 0.28);
+  font-family: Satoshi, sans-serif;
+  font-size: 9.6rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: -0.5rem;
+  bottom: 0;
+}
+.Home .BestSeller-Header p {
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+  line-height: normal;
+  color: #003f88;
+  cursor: pointer;
+  z-index: 2;
+}
+.Home .BestSeller-Header p:hover {
+  text-decoration: underline;
+}
+.Home .BestSeller-Cont {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  cursor: grab;
+  padding-bottom: 1rem;
+}
+.Home .BestSeller-Cont::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.Home .BestSeller-Cont .Option {
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--gray-2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 35rem;
+  transition: all 0.3s ease;
+}
+.Home .BestSeller-Cont .Option:hover {
+  transform: scale(1.05);
+  background-color: var(--gray-3);
+}
+.Home .BestSeller-Cont .Option img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.Home .BestSeller-Cont .Option p {
+  color: var(--primary-text-black);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Home .BannersCont {
+  width: 100%;
+  height: 60rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30rem 30rem;
+  margin: 5rem 0;
+}
+.Home .BannersCont .Banner-Column {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 30rem 30rem;
+  gap: 2rem;
+}
+.Home .BannersCont .Banner-Column .ColumnElement {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.Home .BannersCont .Banner-Column .ColumnElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.Home .BannersCont .Banner-Row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.Home .BannersCont .Banner-Row .RowElement {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.Home .BannersCont .Banner-Row .RowElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Home.css.map */

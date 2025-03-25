@@ -1,0 +1,505 @@
+.ProductSearch {
+  width: 100%;
+  //background-color: red;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+  .ProductSearchWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.6rem;
+    width: 100%;
+    height: 100%;
+
+    .ProductSearchHeader {
+      display: flex;
+      padding-bottom: 1.2rem;
+      align-items: flex-start;
+      gap: 1rem;
+      align-self: stretch;
+      border-bottom: 2px solid var(--primary-border);
+      width: 100%;
+
+      h2 {
+        color: var(--primary-text-black);
+        text-align: center;
+        font-family: "Satoshi", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .ProductSearchContainer {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      gap: 3.6rem;
+
+      .ProductSearchFilterWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        width: 20%;
+
+        .FilterCategory {
+          display: flex;
+          padding: 2.4rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.6rem;
+          width: 100%;
+
+          border-radius: 1rem;
+          //border: 2px solid var(--primary-border);
+          background: var(--gray-1);
+
+          &-Header {
+            display: flex;
+            padding-bottom: 1.2rem;
+            align-items: flex-start;
+            gap: 1rem;
+            align-self: stretch;
+
+            border-bottom: 2px solid var(--primary-border);
+
+            h2 {
+              color: var(--primary-text-black);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.32rem;
+              text-transform: uppercase;
+            }
+          }
+
+          &-Content {
+            display: flex;
+            //width: 33.2rem;
+            max-height: 28.4rem;
+            padding: 1.2rem 0rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.4rem;
+            width: 100%;
+            overflow-y: auto;
+
+            .Element {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              align-self: stretch;
+              cursor: pointer;
+
+              p {
+                color: var(--primary-text-black);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.08rem;
+              }
+
+              i {
+                font-size: 1.6rem;
+                color: var(--primary-text-black);
+              }
+            }
+          }
+
+          &-Filter {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.4rem;
+            align-self: stretch;
+            margin-top: 0.6rem;
+            //width: 33.2rem;
+
+            &-CheckboxWrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.3rem;
+              align-self: stretch;
+
+              .checkbox-wrapper {
+                input[type="checkbox"] {
+                  display: none;
+                  visibility: hidden;
+                }
+                label {
+                  position: relative;
+                  padding-left: 3rem;
+                  // padding-right: 1em;
+                  // padding-top: 1px;
+                  line-height: 2;
+                  cursor: pointer;
+                  display: inline-flex;
+
+                  font-family: "Poppins";
+                  font-size: 1.4rem;
+                  font-weight: 500;
+                  z-index: 2;
+
+                  &:before {
+                    box-sizing: border-box;
+                    content: " ";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                    border: 2px solid #9098a9;
+                    border-radius: 6px;
+                    z-index: -1;
+                  }
+                }
+              }
+
+              .checkbox-wrapper input[type="checkbox"]:checked + label {
+                padding-left: 1em;
+                color: #0f5229;
+              }
+              .checkbox-wrapper input[type="checkbox"]:checked + label:before {
+                top: 50%;
+                transform: translateY(-50%);
+                width: calc(100% + 1.5rem);
+                height: 2.5rem;
+                background: #b7e6c9;
+                border-color: #2cbc63;
+              }
+
+              .checkbox-wrapper label,
+              .checkbox-wrapper label::before {
+                transition: 0.25s all ease;
+              }
+            }
+
+            .slider {
+              width: 100%;
+              height: 0.6rem;
+              background-color: var(--primary-border);
+              margin: 1rem 0;
+              border-radius: 1rem;
+
+              .thumb {
+                width: 1.8rem;
+                height: 1.8rem;
+                cursor: grab;
+                background-color: #787878;
+                border-radius: 50%;
+                border: 0.4rem solid var(--primary-text-black);
+                top: -0.6rem;
+              }
+
+              .track-1 {
+                background-color: #787878;
+                height: 0.6rem;
+                border-radius: 1rem;
+              }
+            }
+            &-Input {
+              display: flex;
+              align-items: flex-start;
+              gap: 2.4rem;
+              //align-self: stretch;
+              width: 100%;
+
+              .Element {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+                width: 50%;
+                //flex: 1 0 0;
+
+                p {
+                  color: #2c2c2c;
+                  text-align: center;
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.2rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.2rem;
+                  text-transform: uppercase;
+                }
+
+                input {
+                  //display: flex;
+                  padding: 1rem 1.4rem;
+                  //align-items: flex-start;
+                  //gap: 1rem;
+                  //align-self: stretch;
+                  outline: 0;
+                  width: 100%;
+
+                  border-radius: 0.2rem;
+                  border: 2px solid #e4e4e4;
+                  background: #fbfbfb;
+                  color: var(--primary-text-black);
+
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                  letter-spacing: 0.14rem;
+                  text-transform: capitalize;
+
+                  &::placeholder {
+                    color: rgba(44, 44, 44, 0.5);
+                    font-family: "Satoshi";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.14rem;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+            }
+
+            p {
+              color: var(--primary-text-black);
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+            }
+
+            .btn {
+              outline: 0;
+              border: 0;
+              border-radius: 0.2rem;
+              background: var(--primary-text-black);
+              padding: 1rem 2.4rem;
+
+              color: #fff;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .ProductSearchMainWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.6rem;
+        flex: 1 0 0;
+        width: 100%;
+        .ProductSearch-Sort {
+          display: flex;
+          padding: 2.4rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.6rem;
+          align-self: stretch;
+          width: 100%;
+
+          border-radius: 1rem;
+          //border: 2px solid var(--primary-border);
+          background: var(--gray-1);
+
+          &-Header {
+            display: flex;
+            padding-bottom: 1.2rem;
+            align-items: flex-start;
+            gap: 1rem;
+            align-self: stretch;
+
+            border-bottom: 2px solid var(--primary-border);
+
+            h2 {
+              color: var(--primary-text-black);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.32rem;
+              text-transform: uppercase;
+            }
+          }
+
+          &-Content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.6rem;
+
+            h2 {
+              color: rgba(44, 44, 44, 0.5);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.2rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.26rem;
+              text-transform: uppercase;
+            }
+
+            &-Main {
+              display: flex;
+              align-items: flex-start;
+              gap: 4.2rem;
+
+              .Element {
+                display: flex;
+                padding: 0.1rem 0rem;
+                align-items: center;
+                gap: 2.2rem;
+                cursor: pointer;
+                border-bottom: 3px solid transparent;
+                position: relative;
+                transition: all 1s ease;
+
+                p {
+                  color: var(--primary-text-black);
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                  letter-spacing: 0.08rem;
+                }
+
+                .bottom-bar {
+                  position: absolute;
+                  width: 0%;
+                  height: 0.3rem;
+                  bottom: -0.5rem;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  display: inline-block;
+                  content: "";
+                  border-radius: 1rem;
+                  background-color: var(--highlight-green);
+                }
+              }
+            }
+          }
+        }
+
+        .ProductSearch-Main {
+          display: grid;
+          width: 100%;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 3rem;
+          row-gap: 6rem;
+        }
+
+        .ProductSearch-Pagination {
+          background-color: red;
+          width: fit-content;
+          margin: 5rem auto;
+          display: flex;
+          justify-content: center;
+          align-items: stretch;
+          //gap: 2rem;
+          background-color: var(--gray-2);
+          border-radius: 2rem;
+
+          p {
+            color: #2c2c2c;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.32rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+          }
+
+          .pageBtns {
+            padding: 2rem;
+            cursor: pointer;
+          }
+
+          .nextBtn {
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 0rem !important;
+            border-bottom-left-radius: 0rem !important;
+          }
+
+          .selectedPage {
+            background-color: var(--gray-3);
+          }
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            padding: 1.5rem 2rem;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: var(--gray-3);
+            }
+
+            p {
+              color: #2c2c2c;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.1rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.32rem;
+              text-transform: uppercase;
+            }
+
+            i {
+              color: #2c2c2c;
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .noProductsFound {
+    //color: var(--primary-text-black);
+    font-family: Satoshi, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}

@@ -1,0 +1,590 @@
+.Cart {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+
+  &Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.6rem;
+    width: 100%;
+
+    .CartHeader {
+      display: flex;
+      padding-bottom: 1.2rem;
+      align-items: flex-start;
+      gap: 1rem;
+      align-self: stretch;
+      width: 100%;
+      border-bottom: 2px solid var(--primary-border);
+
+      h2 {
+        color: var(--primary-text-black);
+        text-align: center;
+        font-family: "Satoshi", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .CartContent {
+      display: flex;
+      align-items: flex-start;
+      gap: 5.6rem;
+      align-self: stretch;
+
+      &-Wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        gap: 3.6rem;
+
+        .cartEmpty {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2.6rem;
+          align-self: center;
+          margin: 5rem 0;
+
+          h2 {
+            color: var(--primary-text-black);
+            font-family: Satoshi, sans-serif;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 900;
+            letter-spacing: 0.3rem;
+            line-height: normal;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .shopButton {
+            display: flex;
+            padding: 1.3rem 2.4rem;
+            justify-content: center;
+            //align-items: center;
+            gap: 1rem;
+            align-self: stretch;
+            border-radius: 0.2rem;
+            background: #ff6d00;
+            cursor: pointer;
+
+            p {
+              color: #fff;
+              font-family: Poppins, sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+            }
+
+            i {
+              font-size: 2rem;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .CartElement {
+          //padding: 2.4rem 0rem;
+          display: flex;
+          align-items: flex-start;
+          gap: 4.8rem;
+          align-self: stretch;
+
+          &-Image {
+            width: 15rem;
+            height: 15rem;
+            //border: 2px solid #e4e4e4;
+            background-color: var(--gray-2);
+
+            padding: 1.5rem;
+            border-radius: 1rem;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          &-Content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+            flex: 1 0 0;
+            align-self: stretch;
+            padding: 0.5rem 0;
+            //justify-content: center;
+            justify-content: space-between;
+
+            &-Header {
+              display: flex;
+              //padding-bottom: 1.2rem;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.3rem;
+              align-self: stretch;
+              //border-bottom: 2px solid var(--primary-border);
+
+              h2 {
+                color: var(--primary-text-black);
+                text-align: center;
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+
+              p {
+                color: #2c2c2c80;
+                cursor: pointer;
+                font-family: Satoshi;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 900;
+                letter-spacing: 0.16rem;
+                line-height: normal;
+                text-align: center;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+
+            .description {
+              color: #2c2c2ccc;
+              font-family: Satoshi, sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 800;
+              letter-spacing: 0.1rem;
+              line-height: 1.7;
+              //background-color: red;
+              width: 100%;
+              flex-grow: 1;
+            }
+
+            &-ShortContent {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 1.2rem;
+              align-self: stretch;
+              padding-top: 1.2rem;
+
+              border-top: 2px solid var(--primary-border);
+
+              border-radius: 0.2rem;
+
+              &-Header {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+                align-self: stretch;
+                h2 {
+                  color: rgba(44, 44, 44, 0.5);
+                  text-align: center;
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.2rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.26rem;
+                  text-transform: uppercase;
+                }
+              }
+
+              &-Main {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-self: stretch;
+                gap: 5rem;
+
+                .Element {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                  gap: 0.3rem;
+                  h2 {
+                    color: rgba(44, 44, 44, 0.5);
+                    text-align: center;
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.1rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.24rem;
+                    text-transform: uppercase;
+
+                    padding: 0.2rem 0rem;
+
+                    border-bottom: 2px solid var(--highlight-green);
+                  }
+
+                  p {
+                    color: var(--primary-text-black);
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.065rem;
+                  }
+                }
+              }
+            }
+
+            &-PriceDetails {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              align-self: stretch;
+              padding-top: 1.2rem;
+
+              border-top: 2px solid var(--primary-border);
+
+              &-Price {
+                display: flex;
+                //flex-direction: column;
+                //align-items: flex-start;
+                align-items: center;
+                gap: 1rem;
+                //flex: 1 0 0;
+
+                .mrpCont {
+                  display: flex;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                  align-items: center;
+                  margin-top: 0.2rem;
+                }
+                p {
+                  color: var(--primary-green);
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.2rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: 1;
+                  letter-spacing: 0.2rem;
+                  text-transform: uppercase;
+                }
+
+                span {
+                  color: #9c9c9c;
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: 1;
+                  letter-spacing: 0.2rem;
+                  text-transform: uppercase;
+                  text-decoration: line-through;
+                }
+
+                h2 {
+                  color: var(--primary-text-black);
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.8rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: 1;
+                  letter-spacing: 0.2rem;
+                  text-transform: uppercase;
+                }
+              }
+
+              //&-Price {
+              //  display: flex;
+              //  flex-direction: column;
+              //  align-items: flex-start;
+              //  flex: 1 0 0;
+              //
+              //  h2 {
+              //    color: var(--primary-green);
+              //    font-family: "Satoshi", sans-serif;
+              //    font-size: 2rem;
+              //    font-style: normal;
+              //    font-weight: 900;
+              //    line-height: normal;
+              //    letter-spacing: 0.2rem;
+              //    text-transform: uppercase;
+              //  }
+              //
+              //  p {
+              //    color: rgba(44, 44, 44, 0.5);
+              //    font-family: "Satoshi", sans-serif;
+              //    font-size: 1rem;
+              //    font-style: normal;
+              //    font-weight: 900;
+              //    line-height: normal;
+              //    letter-spacing: 0.2rem;
+              //    text-transform: uppercase;
+              //  }
+              //}
+
+              &-Buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3.6rem;
+
+                .outOfStock-Text {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 1rem;
+
+                  //background-color: red;
+                  padding: 1rem 1.5rem;
+                  border-radius: 0.5rem;
+                  background-color: rgba(210, 72, 72, 0.7490196078);
+
+                  i {
+                    font-size: 1.2rem;
+                    //color: rgba(210, 72, 72, 0.7490196078);
+                    color: #8c1616;
+                  }
+
+                  p {
+                    color: var(--primary-text-black);
+                    text-align: center;
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.25rem;
+                    text-transform: uppercase;
+                  }
+                }
+
+                .delete {
+                  font-size: 2.7rem;
+                  cursor: pointer;
+                  //color: var(--primary-text-black);
+                }
+
+                .ChangeQuantity {
+                  display: flex;
+                  width: 11.9rem;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  &-sign {
+                    display: flex;
+                    width: 3rem;
+                    height: 3rem;
+                    padding: 0rem 1.2rem;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    flex-shrink: 0;
+
+                    border-radius: 5rem;
+                    border: 2px solid var(--primary-text-black);
+                    cursor: pointer;
+
+                    p {
+                      color: var(--primary-text-black);
+                      font-family: Poppins, sans-serif;
+                      font-size: 1.6rem;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: normal;
+                      letter-spacing: 0.08rem;
+                    }
+                  }
+
+                  &-value {
+                    color: var(--primary-text-black);
+                    font-family: Poppins, sans-serif;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.08rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-DataWrapper {
+        display: flex;
+        width: 42rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        border-radius: 2rem;
+        //border: 2px solid var(--primary-border);
+        background: #fbfbfb;
+        padding: 0 1rem;
+
+        .Element {
+          display: flex;
+          padding: 2.4rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2.4rem;
+          align-self: stretch;
+          border-radius: 0.2rem;
+
+          h2 {
+            color: var(--primary-text-black);
+            text-align: center;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+          }
+
+          &-Details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.9rem;
+            align-self: stretch;
+
+            .Element-row {
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 2.4rem;
+              align-self: stretch;
+
+              &-data {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex: 1 0 0;
+
+                p {
+                  color: rgba(44, 44, 44, 0.5);
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.1rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.26rem;
+                  text-transform: uppercase;
+                }
+
+                .qty {
+                  width: 3.2rem;
+                }
+              }
+
+              span {
+                color: var(--primary-text-black);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.08rem;
+              }
+
+              .orderText {
+                font-size: 1.3rem;
+              }
+            }
+          }
+
+          .CheckoutButton {
+            display: flex;
+            padding: 1.3rem 2.4rem;
+            justify-content: space-between;
+            //align-items: center;
+            gap: 1rem;
+            align-self: stretch;
+            border-radius: 0.2rem;
+            background: #ff6d00;
+            cursor: pointer;
+
+            p {
+              color: #fff;
+              font-family: Poppins, sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+              width: 100%;
+              text-align: center;
+            }
+
+            i {
+              font-size: 2rem;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .disableOut {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          width: 100%;
+
+          //background-color: red;
+          padding: 1rem 1.5rem;
+          border-radius: 0.5rem;
+          background-color: rgba(210, 72, 72, 0.7490196078);
+
+          i {
+            font-size: 1.2rem;
+            //color: rgba(210, 72, 72, 0.7490196078);
+            color: #8c1616;
+          }
+
+          p {
+            color: var(--primary-text-black);
+            text-align: center;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+          }
+        }
+
+        .Element-orderSummary {
+          border-bottom: 2px solid var(--primary-border);
+        }
+
+        .Element-finalPrice {
+          border-top: 2px solid var(--primary-border);
+        }
+      }
+    }
+  }
+}

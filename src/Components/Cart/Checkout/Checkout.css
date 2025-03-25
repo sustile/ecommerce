@@ -1,0 +1,670 @@
+.Checkout {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.6rem;
+}
+.CheckoutTopBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.CheckoutTopBar-Header {
+  display: flex;
+  padding: 0rem 12.8rem 1.2rem 12.8rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.CheckoutTopBar-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.CheckoutTopBar-StatusBar {
+  display: flex;
+  padding: 1.6rem 12.8rem;
+  align-items: flex-start;
+  gap: 4.8rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+  background: var(--gray-1);
+}
+.CheckoutTopBar-StatusBar .Element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.CheckoutTopBar-StatusBar .ElementIcon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5rem;
+  border: 2px solid var(--primary-border);
+}
+.CheckoutTopBar-StatusBar .ElementIcon p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.CheckoutTopBar-StatusBar .ElementIcon i {
+  font-size: 1.1rem;
+  color: #ffffff;
+  display: none;
+}
+.CheckoutTopBar-StatusBar .Element span {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.CheckoutWrapper {
+  display: flex;
+  padding: 0rem 12.8rem;
+  align-items: flex-start;
+  gap: 3.6rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CheckoutCart {
+  display: flex;
+  padding: 2.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border-radius: 2rem;
+  background: var(--gray-1);
+}
+.CheckoutWrapper .CheckoutCart-Header {
+  display: flex;
+  padding-bottom: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.CheckoutWrapper .CheckoutCart-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement {
+  display: flex;
+  align-items: flex-start;
+  gap: 4.8rem;
+  align-self: stretch;
+  padding: 1.4rem 0;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Image {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--gray-2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-Header h2:hover {
+  text-decoration: underline;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-Header p {
+  color: rgba(44, 44, 44, 0.5019607843);
+  cursor: pointer;
+  font-family: Satoshi;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.16rem;
+  line-height: normal;
+  text-align: center;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-Header p:hover {
+  text-decoration: underline;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content .description {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  width: 100%;
+  flex-grow: 1;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+  border-radius: 0.2rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Header h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 5rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Main .Element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Main .Element h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0rem;
+  border-bottom: 2px solid var(--highlight-green);
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-ShortContent-Main .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.065rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Price .mrpCont {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Price p {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Price span {
+  color: #9c9c9c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Price h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-qty {
+  color: rgba(44, 44, 44, 0.5019607843);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.24rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .delete {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity {
+  display: flex;
+  width: 11.9rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: 5rem;
+  border: 2px solid var(--primary-text-black);
+  cursor: pointer;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign p {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CheckoutWrapper .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-value {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  margin: 2.4rem 0;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main .selectedAddress {
+  background: var(--gray-2);
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main .confirmationAddress {
+  cursor: auto;
+  padding: 0;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-AddAddress {
+  display: flex;
+  padding: 1.2rem 0rem 2.4rem 0rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-AddAddress p {
+  color: var(--primary-blue);
+  cursor: pointer;
+  font-family: Satoshi, sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.28rem;
+  line-height: normal;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main .CheckoutPayment-Header h2 {
+  font-size: 1.2rem;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main .CheckoutPayment-Header span {
+  font-size: 1.2rem;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  cursor: pointer;
+  align-self: stretch;
+  border-radius: 0.2rem;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address-gap {
+  height: 2.4rem;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address-Header .checkbox {
+  display: flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  border: 2px solid var(--primary-text-black);
+  background: #fff;
+  cursor: pointer;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address-Header .checkbox i {
+  font-size: 1.4rem;
+  color: var(--primary-green);
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address span {
+  color: rgba(44, 44, 44, 0.75);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CheckoutCart .CheckoutAddress-Main-Address p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper {
+  display: flex;
+  padding-top: 2.4rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  align-self: stretch;
+  border-top: 2px solid var(--primary-border);
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper .cancel {
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper .cancel i {
+  color: #8c1616;
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper .cancel p {
+  color: var(--primary-text-black);
+  font-weight: 600;
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper button {
+  display: flex;
+  padding: 1.2rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--primary-text-black);
+  cursor: pointer;
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper button p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CheckoutWrapper .CheckoutCart-ButtonWrapper button i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.CheckoutWrapper .CheckoutCart-ConfirmationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  align-self: stretch;
+  margin: 2.4rem 0;
+}
+.CheckoutWrapper .CheckoutCart-ConfirmationWrapper-Container {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 1rem;
+  background: var(--gray-2);
+}
+.CheckoutWrapper .CartContent-DataWrapper {
+  display: flex;
+  width: 42rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 2rem;
+  background: #fbfbfb;
+  padding: 0 1rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  align-self: stretch;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row-data p {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row-data .qty {
+  width: 3.2rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row span {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-Details .Element-row .orderText {
+  font-size: 1.3rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element .CheckoutButton {
+  display: flex;
+  padding: 1.3rem 2.4rem;
+  justify-content: center;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+  background: #ff6d00;
+  cursor: pointer;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element .CheckoutButton p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element .CheckoutButton i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-orderSummary {
+  border-bottom: 2px solid var(--primary-border);
+}
+.CheckoutWrapper .CartContent-DataWrapper .Element-finalPrice {
+  border-top: 2px solid var(--primary-border);
+}
+
+/*# sourceMappingURL=Checkout.css.map */

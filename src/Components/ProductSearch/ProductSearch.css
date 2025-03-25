@@ -1,0 +1,436 @@
+.ProductSearch {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+}
+.ProductSearch .ProductSearchWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.6rem;
+  width: 100%;
+  height: 100%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchHeader {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+  width: 100%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchHeader h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 3.6rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  width: 20%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--gray-1);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Header {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Content {
+  display: flex;
+  max-height: 28.4rem;
+  padding: 1.2rem 0rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  width: 100%;
+  overflow-y: auto;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Content .Element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  cursor: pointer;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Content .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Content .Element i {
+  font-size: 1.6rem;
+  color: var(--primary-text-black);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  align-self: stretch;
+  margin-top: 0.6rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  align-self: stretch;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper input[type=checkbox] {
+  display: none;
+  visibility: hidden;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper label {
+  position: relative;
+  padding-left: 3rem;
+  line-height: 2;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+  z-index: 2;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper label:before {
+  box-sizing: border-box;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #9098a9;
+  border-radius: 6px;
+  z-index: -1;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper input[type=checkbox]:checked + label {
+  padding-left: 1em;
+  color: #0f5229;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper input[type=checkbox]:checked + label:before {
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 1.5rem);
+  height: 2.5rem;
+  background: #b7e6c9;
+  border-color: #2cbc63;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper label,
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-CheckboxWrapper .checkbox-wrapper label::before {
+  transition: 0.25s all ease;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter .slider {
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--primary-border);
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter .slider .thumb {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: grab;
+  background-color: #787878;
+  border-radius: 50%;
+  border: 0.4rem solid var(--primary-text-black);
+  top: -0.6rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter .slider .track-1 {
+  background-color: #787878;
+  height: 0.6rem;
+  border-radius: 1rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-Input {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 100%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-Input .Element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 50%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-Input .Element p {
+  color: #2c2c2c;
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-Input .Element input {
+  padding: 1rem 1.4rem;
+  outline: 0;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 2px solid #e4e4e4;
+  background: #fbfbfb;
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+  text-transform: capitalize;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter-Input .Element input::placeholder {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+  text-transform: capitalize;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchFilterWrapper .FilterCategory-Filter .btn {
+  outline: 0;
+  border: 0;
+  border-radius: 0.2rem;
+  background: var(--primary-text-black);
+  padding: 1rem 2.4rem;
+  color: #fff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.6rem;
+  flex: 1 0 0;
+  width: 100%;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--gray-1);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Header {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content-Main {
+  display: flex;
+  align-items: flex-start;
+  gap: 4.2rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content-Main .Element {
+  display: flex;
+  padding: 0.1rem 0rem;
+  align-items: center;
+  gap: 2.2rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  transition: all 1s ease;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content-Main .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Sort-Content-Main .Element .bottom-bar {
+  position: absolute;
+  width: 0%;
+  height: 0.3rem;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  content: "";
+  border-radius: 1rem;
+  background-color: var(--highlight-green);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  row-gap: 6rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination {
+  background-color: red;
+  width: fit-content;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: var(--gray-2);
+  border-radius: 2rem;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination p {
+  color: #2c2c2c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination .pageBtns {
+  padding: 2rem;
+  cursor: pointer;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination .nextBtn {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 0rem !important;
+  border-bottom-left-radius: 0rem !important;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination .selectedPage {
+  background-color: var(--gray-3);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: all 0.3s ease;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination button:hover {
+  background-color: var(--gray-3);
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination button p {
+  color: #2c2c2c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+}
+.ProductSearch .ProductSearchWrapper .ProductSearchContainer .ProductSearchMainWrapper .ProductSearch-Pagination button i {
+  color: #2c2c2c;
+  font-size: 2.2rem;
+}
+.ProductSearch .noProductsFound {
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/*# sourceMappingURL=ProductSearch.css.map */

@@ -1,0 +1,685 @@
+.ProductPage {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 25.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ProductPage .ProductPageWrapper {
+  display: flex;
+  gap: 12rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.ProductPage-Header {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ProductPage-Header p,
+.ProductPage-Header span {
+  color: rgba(44, 44, 44, 0.5019607843);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.ProductPage span {
+  color: var(--gray-2);
+}
+.ProductPage .final {
+  color: var(--primary-text-black);
+  width: 25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.ProductPage-ImageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 3.6rem;
+  width: 50%;
+  position: sticky;
+  top: 10%;
+}
+.ProductPage-ImageWrapper-Image {
+  width: 100%;
+  height: 47rem;
+  padding: 2rem;
+  position: relative;
+  background-color: var(--gray-2);
+  border-radius: 1rem;
+}
+.ProductPage-ImageWrapper-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ProductPage-ImageWrapper-Image span {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(45, 106, 79, 0.34);
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+}
+.ProductPage-ImageWrapper-ImageCarousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  position: relative;
+  height: 10rem;
+  overflow: hidden;
+}
+.ProductPage-ImageWrapper-ImageCarousel img {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--gray-2);
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+.ProductPage-ImageWrapper-ImageCarousel .selectedImage {
+  background-color: rgba(44, 44, 44, 0.3);
+}
+.ProductPage-ImageWrapper .controlCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+.ProductPage-ImageWrapper .controlCont i {
+  font-size: 2rem;
+  background-color: var(--gray-2);
+  padding: 1rem 1.8rem;
+  z-index: 5;
+  color: rgb(44, 44, 44);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.ProductPage-Content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ProductPage-Content-Cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+  padding: 3rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+  width: 100%;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper .outOfStock-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper .outOfStock-Text i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper .outOfStock-Text p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  gap: 0.2rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Header p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.16rem;
+  cursor: pointer;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Header p:hover {
+  text-decoration: underline;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Header h2 {
+  color: #2c2c2c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Header h2:hover {
+  text-decoration: underline;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Star {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-border);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Star i {
+  font-size: 1.8rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper-Star span {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi";
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-HeaderWrapper .description {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+.ProductPage-Content-Cont-Price {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.ProductPage-Content-Cont-Price span {
+  color: #9c9c9c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.ProductPage-Content-Cont-Price .price {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.ProductPage-Content-Cont-Price .price .rupee-sign {
+  text-decoration: none !important;
+}
+.ProductPage-Content-Cont-Price h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: flex-start;
+  width: 100%;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.3rem;
+  align-items: flex-start;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants h2 {
+  color: rgba(44, 44, 44, 0.7);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.15rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants-Types {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants-Types p {
+  color: rgba(44, 44, 44, 0.7);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2.5px solid var(--primary-border);
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants-Types img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary-border);
+  cursor: pointer;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants-Types .selected {
+  border: 2.5px solid var(--primary-border);
+  background-color: var(--primary-border);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ProductPage-Content-Cont-Variants-Types .outOfStock {
+  border: 2px solid rgba(210, 72, 72, 0.749);
+  background-color: rgba(210, 72, 72, 0.749);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .qtyBtn {
+  justify-content: space-between !important;
+  background-color: var(--gray-2) !important;
+  cursor: auto !important;
+  padding: 0 !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .qtyBtn i {
+  font-size: 1.8rem !important;
+  color: #2c2c2c !important;
+  height: 100%;
+  padding: 1.6rem 2rem;
+  cursor: pointer;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .qtyBtn .cartCounter {
+  color: #2c2c2c !important;
+  font-weight: 700 !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .BtnRow {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .Wishlist {
+  font-size: 2rem;
+  color: #9b9b9b;
+  padding: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .inWish {
+  color: rgba(218, 65, 103, 0.74);
+  background-color: var(--gray-2);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .addCartBtn {
+  background: rgba(45, 106, 79, 0.34) !important;
+  border-radius: 0.7rem !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .outOfStockBtn {
+  background-color: rgba(210, 72, 72, 0.7490196078) !important;
+  cursor: not-allowed !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .outOfStockBtn i {
+  color: #8c1616 !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .outOfStockBtn p {
+  color: var(--primary-text-black) !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .Btn {
+  display: flex;
+  padding: 1.4rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background: #2c2c2c;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .Btn i {
+  font-size: 2rem;
+  color: var(--primary-green);
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .Btn .qtyCounter {
+  color: #fff;
+  font-family: Satoshi, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.075rem;
+  line-height: normal;
+  color: #2c2c2c !important;
+  font-weight: 700 !important;
+}
+.ProductPage-Content-Cont .ProductPage-Content-Cont-Variants-Wrapper .ButtonWrapper .Btn .cartCounter {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+.ProductPage-Content-Cont-Specifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  align-items: flex-start;
+  width: 100%;
+}
+.ProductPage-Content-Cont-Specifications .fault {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1rem 0;
+}
+.ProductPage-Content-Cont-Specifications-Table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  width: 100%;
+}
+.ProductPage-Content-Cont-Specifications-Table .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5.4rem;
+  align-self: stretch;
+  width: 100%;
+}
+.ProductPage-Content-Cont-Specifications-Table .row p {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  width: 100%;
+}
+.ProductPage-Content-Cont-Specifications-Table .row span {
+  color: #2c2c2c;
+  font-family: "Satoshi Variable";
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  text-align: right;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  align-self: stretch;
+  width: 100%;
+  margin-top: 2rem;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-Header-Star {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-border);
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-Header-Star i {
+  font-size: 1.8rem;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-Header-Star span {
+  color: rgba(44, 44, 44, 0.7);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+}
+.ProductPage-Content-Cont-Specifications .ProductPage-Content-Cont-CommentsWrapper .Comment-text {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+.ProductPage-Content .spec::before {
+  transform: translateX(0);
+}
+.ProductPage-Content .reviews::before {
+  transform: translateX(100%);
+}
+.ProductPage-Content .TabView {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ProductPage-Content .TabView::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 0.3rem;
+  background-color: var(--primary-green);
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.ProductPage-Content .TabView .selected {
+  background-color: var(--gray-2);
+}
+.ProductPage-Content .TabView .selected h2 {
+  color: var(--primary-green) !important;
+}
+.ProductPage-Content .TabView .Option {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  height: 6rem;
+  transition: all 0.3s ease;
+}
+.ProductPage-Content .TabView .Option h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.ProductPage-Content .borderTop {
+  border-top: 2px solid var(--primary-border);
+}
+.ProductPage-Content .borderBottom {
+  border-bottom: 2px solid var(--primary-border);
+}
+.ProductPage-ReviewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: red;
+  width: 100%;
+  padding: 3.2rem;
+  background-color: var(--gray-1);
+  border-radius: 0.8rem;
+  border: 3px solid var(--primary-green);
+}
+.ProductPage-ReviewForm-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.ProductPage-ReviewForm .fault {
+  padding: 0;
+  text-align: left;
+}
+.ProductPage-ReviewForm h3 {
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--primary-green) !important;
+}
+.ProductPage-ReviewForm form {
+  padding-top: 1.5rem;
+}
+.ProductPage-ReviewForm button {
+  border-radius: 0.7rem;
+  background-color: rgba(45, 106, 79, 0.34) !important;
+}
+.ProductPage-ReviewForm button p {
+  color: var(--primary-green);
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=ProductPage.css.map */

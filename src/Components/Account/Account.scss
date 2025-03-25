@@ -1,0 +1,1323 @@
+.Account {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+
+  .AccountWrapper {
+    display: flex;
+    //width: 124rem;
+    //width: 76.4%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.6rem;
+    flex-shrink: 0;
+    height: calc(100vh - 19.5rem);
+
+    .AccountHeader {
+      display: flex;
+      padding-bottom: 1.2rem;
+      align-items: flex-start;
+      gap: 1rem;
+      align-self: stretch;
+      border-bottom: 2px solid var(--primary-border);
+
+      h2 {
+        color: var(--primary-text-black);
+        text-align: center;
+        font-family: "Satoshi", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .AccountContent {
+      display: flex;
+      align-items: flex-start;
+      gap: 4.8rem;
+      flex: 1 0 0;
+      height: 100%;
+      //width: 100%;
+      min-width: 86.4%;
+
+      height: calc(100% - 3.6rem - 3.6rem);
+
+      .AccountOptions {
+        display: flex;
+        width: 29rem;
+        padding: 2.4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        align-self: stretch;
+        border-radius: 0.5rem;
+        background: var(--gray-1);
+
+        .top {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          align-self: stretch;
+        }
+
+        .Element {
+          display: flex;
+          padding: 0.9rem 1.6rem;
+          align-items: center;
+          gap: 1.6rem;
+          align-self: stretch;
+          border-radius: 0.5rem;
+          cursor: pointer;
+
+          i {
+            font-size: 1.8rem;
+            color: var(--primary-text-black);
+          }
+
+          p {
+            color: var(--primary-text-black);
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.08rem;
+          }
+        }
+
+        .selectedOption {
+          border-radius: 0.5rem;
+          background: rgba(126, 178, 239, 0.5);
+
+          i,
+          p {
+            color: #003f88;
+          }
+        }
+
+        .signout {
+          border-radius: 0.5rem;
+          background: rgba(210, 72, 72, 0.75);
+
+          i,
+          p {
+            color: #8c1616;
+          }
+        }
+
+        .bottom {
+          display: flex;
+          padding-top: 1.2rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          align-self: stretch;
+
+          border-top: 2px solid var(--primary-border);
+        }
+      }
+
+      .AccountMain {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        background: #ffffff;
+        //height: calc(100vh - 69px - 8.2rem);
+        overflow-y: auto;
+        //min-height: 100%;
+        padding-left: 0.5rem;
+
+        &-MainHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 2rem;
+          width: 100%;
+          border-bottom: 2px solid var(--primary-border);
+
+          .AccountMain-Header {
+            border-bottom: none !important;
+          }
+
+          //&-AddAddress {
+          //  display: flex;
+          //  //padding: 1.2rem 0rem 2.4rem 0rem;
+          //  justify-content: flex-end;
+          //  align-items: center;
+          //  gap: 1rem;
+          //  align-self: stretch;
+          //  padding-bottom: 1.2rem;
+          //
+          //  p {
+          //    color: var(--primary-blue);
+          //    text-align: center;
+          //    font-family: "Satoshi", sans-serif;
+          //    font-size: 1.1rem;
+          //    font-style: normal;
+          //    font-weight: 900;
+          //    line-height: normal;
+          //    letter-spacing: 0.28rem;
+          //    text-decoration-line: underline;
+          //    text-transform: uppercase;
+          //    cursor: pointer;
+          //  }
+          //}
+
+          .Element {
+            display: flex;
+            padding: 0.9rem 2.4rem;
+            align-items: center;
+            gap: 1.6rem;
+            //align-self: stretch;
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            i {
+              font-size: 1.6rem;
+              color: var(--primary-text-black);
+            }
+
+            p {
+              color: var(--primary-text-black);
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+            }
+          }
+
+          .selectedOption {
+            border-radius: 0.5rem;
+            background: rgba(126, 178, 239, 0.5);
+
+            i,
+            p {
+              color: #003f88;
+            }
+          }
+        }
+
+        &-Header {
+          display: flex;
+          padding-bottom: 1.2rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          align-self: stretch;
+          border-bottom: 2px solid var(--primary-border);
+
+          h2 {
+            color: var(--primary-text-black);
+            text-align: center;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+          }
+
+          p {
+            color: rgba(44, 44, 44, 0.5);
+            text-align: center;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.1rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+          }
+        }
+
+        .addAddressForm {
+          padding: 2.4rem;
+          background-color: var(--gray-2);
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 100%;
+        }
+
+        &-FormContainer {
+          display: flex;
+          //padding: 2.4rem 0rem;
+          padding-top: 2.4rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 3.2rem;
+          align-self: stretch;
+          height: 100%;
+          flex-grow: 1;
+
+          .row {
+            display: flex;
+            align-items: flex-start;
+            gap: 3.6rem;
+            align-self: stretch;
+
+            .InputContainer {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 1.2rem;
+              flex: 1 0 0;
+
+              p {
+                color: var(--primary-text-black);
+                text-align: left;
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.1rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.28rem;
+                text-transform: uppercase;
+
+                span {
+                  color: rgba(44, 44, 44, 0.5);
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.2rem;
+                  text-transform: uppercase;
+                }
+              }
+
+              .dropdown {
+                border-radius: 0.8rem;
+                border: 2px solid #e4e4e4;
+                //background: #fbfbfb;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                transition: all 0.2s ease;
+
+                &:hover {
+                  border: 2px solid rgba(126, 178, 239, 0.8);
+                }
+
+                &:focus {
+                  border: 2px solid rgba(126, 178, 239, 0.8);
+                  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+                }
+
+                .hoverAvailable {
+                  &:hover {
+                    background: var(--gray-1);
+                  }
+                }
+
+                .dropOtherOptions {
+                  position: absolute;
+                  top: 110%;
+                  border: 2px solid #fbfbfb;
+                  left: 0;
+                  border-radius: 0.2rem;
+                  background: var(--gray-2);
+                  width: 100%;
+                }
+
+                &Option {
+                  padding: 1.2rem 2rem;
+                  width: 100%;
+                  outline: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 1rem;
+                  cursor: pointer;
+                  transition: background 0.3s ease;
+
+                  p {
+                    color: var(--primary-text-black);
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.14rem;
+                    text-transform: capitalize;
+                  }
+
+                  i {
+                    font-size: 1.9rem;
+                    //color: var(--primary-text-black);
+                    color: rgba(44, 44, 44, 0.5);
+                    transition: all 0.3s ease;
+                  }
+                }
+              }
+
+              textarea,
+              input {
+                //padding: 1.3rem 2.4rem;
+                //width: 100%;
+                //border-radius: 0.2rem;
+                //border: 2px solid #e4e4e4;
+                //background: #fbfbfb;
+                //outline: 0;
+                //resize: vertical;
+                //
+                //color: var(--primary-text-black);
+                //font-family: "Satoshi", sans-serif;
+                //font-size: 1.4rem;
+                //font-style: normal;
+                //font-weight: 700;
+                //line-height: normal;
+                //letter-spacing: 0.14rem;
+
+                padding: 1.2rem 2rem;
+                width: 100%;
+                border-radius: 0.8rem;
+                border: 2px solid #e4e4e4;
+                outline: 0;
+                resize: vertical;
+                transition: all 0.2s ease;
+
+                color: var(--primary-text-black);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.14rem;
+
+                &:hover {
+                  border: 2px solid rgba(126, 178, 239, 0.8);
+                }
+
+                &:focus {
+                  border: 2px solid rgba(126, 178, 239, 0.8);
+                  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+                }
+              }
+
+              textarea {
+                height: 11rem;
+              }
+            }
+          }
+        }
+
+        &-AddressContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          align-self: stretch;
+          margin-top: 2.4rem;
+
+          .selectedAddress {
+            background: var(--gray-1);
+          }
+
+          .confirmationAddress {
+            cursor: none;
+            padding: 0;
+          }
+
+          &-AddAddress {
+            display: flex;
+            padding: 1.2rem 0rem 2.4rem 0rem;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 1rem;
+            align-self: stretch;
+
+            p {
+              color: var(--primary-blue);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.1rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.28rem;
+              text-decoration-line: underline;
+              text-transform: uppercase;
+              cursor: pointer;
+            }
+          }
+
+          .AccountMain-Address {
+            display: flex;
+            padding: 2.4rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.4rem;
+            //cursor: pointer;
+            align-self: stretch;
+
+            border-radius: 0.2rem;
+            //background: var(--gray-2);
+
+            &-gap {
+              height: 2.4rem;
+            }
+
+            &-Header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              align-self: stretch;
+
+              h2 {
+                color: var(--primary-text-black);
+                text-align: center;
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.28rem;
+                text-transform: uppercase;
+              }
+
+              i {
+                font-size: 2rem;
+                color: #d24848;
+                cursor: pointer;
+              }
+
+              .checkbox {
+                display: flex;
+                width: 1.8rem;
+                height: 1.8rem;
+                padding: 0.2rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.4rem;
+                border: 2px solid var(--primary-text-black);
+                background: #fff;
+                cursor: pointer;
+
+                i {
+                  font-size: 1.4rem;
+                  color: var(--primary-green);
+                }
+              }
+            }
+
+            span {
+              color: rgba(44, 44, 44, 0.75);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.2rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.26rem;
+              text-transform: uppercase;
+            }
+
+            p {
+              color: rgba(44, 44, 44, 0.5);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.05rem;
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        &-OrderContainer {
+          display: flex;
+          padding: 2.4rem 0rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.2rem;
+          align-self: stretch;
+
+          &-OrderElement {
+            display: flex;
+            padding: 2.4rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.2rem;
+            align-self: stretch;
+            border-radius: 0.2rem;
+            background: var(--gray-1);
+
+            &-Header {
+              display: flex;
+              padding-bottom: 1.2rem;
+              align-items: flex-start;
+              gap: 0.4rem;
+              align-self: stretch;
+              border-bottom: 2px solid var(--primary-border);
+              &-Element {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+                flex: 1 0 0;
+                span {
+                  color: rgba(44, 44, 44, 0.75);
+                  text-align: center;
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.2rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.24rem;
+                  text-transform: uppercase;
+                }
+
+                p {
+                  color: var(--primary-text-black);
+                  text-align: center;
+                  font-family: "Satoshi", sans-serif;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                  letter-spacing: 0.28rem;
+                  text-transform: uppercase;
+                }
+              }
+
+              .Left {
+                align-items: flex-end;
+              }
+            }
+            &-Container {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              align-self: stretch;
+              //padding-top: 0.8rem;
+              gap: 5rem;
+
+              &-LeftWrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-self: stretch;
+                gap: 1.2rem;
+                //width: 100%;
+                flex-grow: 1;
+
+                &-Bottom {
+                  padding-top: 1.2rem;
+                  border-top: 2px solid var(--primary-border);
+
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 2.4rem;
+                  align-self: stretch;
+
+                  h2 {
+                    color: rgba(44, 44, 44, 0.75);
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.3rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.26rem;
+                    text-transform: uppercase;
+                  }
+
+                  p {
+                    color: var(--primary-text-black);
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.07rem;
+                  }
+                }
+              }
+
+              &-Left {
+                display: flex;
+                align-items: flex-start;
+                gap: 2.4rem;
+                width: 100%;
+
+                img {
+                  width: 10rem;
+                  height: 10rem;
+                  border-radius: 0.2rem;
+
+                  border: 2px solid var(--primary-border);
+                }
+
+                &-Details {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 0.6rem;
+                  align-self: stretch;
+                  justify-content: center;
+                  width: 100%;
+
+                  &-Top {
+                    display: flex;
+                    padding-bottom: 0.6rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.1rem;
+                    align-self: stretch;
+                    border-bottom: 2px solid var(--primary-border);
+                    width: 100%;
+
+                    h2 {
+                      color: var(--primary-text-black);
+                      text-align: center;
+                      font-family: "Satoshi", sans-serif;
+                      font-size: 1.2rem;
+                      font-style: normal;
+                      font-weight: 900;
+                      line-height: normal;
+                      letter-spacing: 0.24rem;
+                      text-transform: uppercase;
+                    }
+
+                    p {
+                      color: rgba(44, 44, 44, 0.5);
+                      text-align: center;
+                      font-family: "Satoshi", sans-serif;
+                      font-size: 1.1rem;
+                      font-style: normal;
+                      font-weight: 900;
+                      line-height: normal;
+                      letter-spacing: 0.22rem;
+                      text-transform: uppercase;
+                    }
+                  }
+
+                  &-Bottom {
+                    display: flex;
+                    align-items: center;
+                    gap: 3.4rem;
+                    align-self: stretch;
+                    &-Left {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      flex: 1 0 0;
+
+                      h2 {
+                        color: var(--primary-green);
+                        font-family: "Satoshi", sans-serif;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        letter-spacing: 0.15rem;
+                        text-transform: uppercase;
+                      }
+
+                      p {
+                        color: rgba(44, 44, 44, 0.5);
+                        font-family: "Satoshi", sans-serif;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                      }
+                    }
+
+                    span {
+                      color: rgba(44, 44, 44, 0.5);
+                      font-family: "Satoshi", sans-serif;
+                      font-size: 1.2rem;
+                      font-style: normal;
+                      font-weight: 900;
+                      line-height: normal;
+                      letter-spacing: 0.24rem;
+                      text-transform: uppercase;
+                    }
+                  }
+                }
+              }
+
+              &-Right {
+                display: flex;
+                width: 24.8rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+
+                .downloadInvoice {
+                  background: rgba(126, 178, 239, 0.5);
+
+                  p {
+                    color: var(--primary-blue);
+                  }
+                }
+
+                .cancelOrder {
+                  background: rgba(210, 72, 72, 0.75);
+
+                  p {
+                    color: #8c1616;
+                  }
+                }
+
+                button {
+                  display: flex;
+                  padding: 0.9rem 1.6rem;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 1.6rem;
+                  align-self: stretch;
+                  border-radius: 0.5rem;
+                  background: var(--gray-2);
+                  cursor: pointer;
+
+                  p {
+                    color: var(--primary-text-black);
+                    font-family: "Satoshi", sans-serif;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.07rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &-HelpDesk {
+          display: flex;
+          padding-top: 2.4rem;
+          align-items: flex-start;
+          gap: 5.2rem;
+          flex: 1 0 0;
+          align-self: stretch;
+
+          &-Contact {
+            display: flex;
+            width: 32.7rem;
+            padding: 2.4rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.6rem;
+            align-self: stretch;
+
+            border-radius: 0.5rem;
+            background: var(--gray-1);
+
+            &-Header {
+              display: flex;
+              padding-bottom: 0.8rem;
+              align-items: flex-start;
+              gap: 1rem;
+              align-self: stretch;
+
+              border-bottom: 2px solid var(--primary-border);
+
+              h2 {
+                color: rgba(44, 44, 44, 0.75);
+                text-align: center;
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+              }
+            }
+
+            &-Element {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.5rem;
+              align-self: stretch;
+              h2 {
+                color: var(--primary-text-black);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.1rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.26rem;
+                text-transform: uppercase;
+              }
+
+              p {
+                color: var(--primary-blue);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.13rem;
+                text-transform: lowercase;
+                cursor: pointer;
+              }
+
+              &-Office-Country {
+                color: rgba(44, 44, 44, 0.75) !important;
+                text-align: center !important;
+                font-family: "Satoshi", sans-serif !important;
+                font-size: 1.1rem !important;
+                font-style: normal !important;
+                font-weight: 900 !important;
+                line-height: normal !important;
+                letter-spacing: 0.24rem !important;
+                text-transform: uppercase !important;
+                cursor: auto !important;
+              }
+
+              span {
+                color: rgba(44, 44, 44, 0.5);
+                font-family: "Satoshi", sans-serif;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.13rem;
+              }
+            }
+          }
+        }
+
+        &-ButtonContainer {
+          display: flex;
+          padding-top: 2.4rem;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          gap: 1rem;
+          width: 100%;
+          //flex: 1 0 0;
+          //align-self:
+          flex-grow: 1;
+
+          .row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1.6rem;
+            align-self: stretch;
+          }
+
+          .cancel {
+            background-color: rgba(210, 72, 72, 0.75);
+            p {
+              color: #8c1616;
+            }
+
+            &:hover {
+              background-color: rgba(210, 72, 72, 0.85);
+            }
+          }
+
+          .confirm {
+            background-color: #7eb2ef;
+            p {
+              color: #003f88;
+            }
+          }
+
+          button {
+            display: flex;
+            padding: 1.2rem 3rem;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 1rem;
+            background: rgba(126, 178, 239, 0.8);
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            p {
+              //color: #7eb2ef;
+              color: #003f88;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+            }
+
+            &:hover {
+              background-color: rgba(126, 178, 239, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .CheckoutCart-CartElement {
+    //padding: 2.4rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2.8rem;
+    align-self: stretch;
+    padding: 0.7rem 0;
+
+    &-Image {
+      width: 9rem;
+      height: 9rem;
+      //border: 2px solid #e4e4e4;
+      background-color: var(--gray-2);
+
+      padding: 1.5rem;
+      border-radius: 1rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-Content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 1 0 0;
+      align-self: stretch;
+      padding: 0.5rem 0;
+      //justify-content: center;
+      justify-content: space-between;
+
+      &-Header {
+        display: flex;
+        //padding-bottom: 1.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        align-self: stretch;
+        //border-bottom: 2px solid var(--primary-border);
+
+        h2 {
+          color: var(--primary-text-black);
+          text-align: center;
+          font-family: "Satoshi", sans-serif;
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          letter-spacing: 0.3rem;
+          text-transform: uppercase;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          color: #2c2c2c80;
+          cursor: pointer;
+          font-family: Satoshi;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 900;
+          letter-spacing: 0.16rem;
+          line-height: normal;
+          text-align: center;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .description {
+        color: #2c2c2ccc;
+        font-family: Satoshi, sans-serif;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+        line-height: 1.7;
+        //background-color: red;
+        width: 100%;
+        flex-grow: 1;
+      }
+
+      &-ShortContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+        align-self: stretch;
+        padding-top: 1.2rem;
+
+        border-top: 2px solid var(--primary-border);
+
+        border-radius: 0.2rem;
+
+        &-Header {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.6rem;
+          align-self: stretch;
+          h2 {
+            color: rgba(44, 44, 44, 0.5);
+            text-align: center;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.26rem;
+            text-transform: uppercase;
+          }
+        }
+
+        &-Main {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          align-self: stretch;
+          gap: 5rem;
+
+          .Element {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.3rem;
+            h2 {
+              color: rgba(44, 44, 44, 0.5);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.1rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.24rem;
+              text-transform: uppercase;
+
+              padding: 0.2rem 0rem;
+
+              border-bottom: 2px solid var(--highlight-green);
+            }
+
+            p {
+              color: var(--primary-text-black);
+              font-family: "Satoshi", sans-serif;
+              font-size: 1.2rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.065rem;
+            }
+          }
+        }
+      }
+
+      &-PriceDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        padding-top: 1.2rem;
+
+        border-top: 2px solid var(--primary-border);
+
+        &-Price {
+          display: flex;
+          //flex-direction: column;
+          //align-items: flex-start;
+          align-items: center;
+          gap: 1rem;
+          //flex: 1 0 0;
+
+          .mrpCont {
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            align-items: center;
+            margin-top: 0.2rem;
+          }
+          p {
+            color: var(--primary-green);
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+          }
+
+          span {
+            color: #9c9c9c;
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            text-decoration: line-through;
+          }
+
+          h2 {
+            color: var(--primary-text-black);
+            font-family: "Satoshi", sans-serif;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+          }
+        }
+
+        &-qty {
+          color: #2c2c2c80;
+          font-family: Satoshi, sans-serif;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 900;
+          letter-spacing: 0.24rem;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+
+        //&-Price {
+        //  display: flex;
+        //  flex-direction: column;
+        //  align-items: flex-start;
+        //  flex: 1 0 0;
+        //
+        //  h2 {
+        //    color: var(--primary-green);
+        //    font-family: "Satoshi", sans-serif;
+        //    font-size: 2rem;
+        //    font-style: normal;
+        //    font-weight: 900;
+        //    line-height: normal;
+        //    letter-spacing: 0.2rem;
+        //    text-transform: uppercase;
+        //  }
+        //
+        //  p {
+        //    color: rgba(44, 44, 44, 0.5);
+        //    font-family: "Satoshi", sans-serif;
+        //    font-size: 1rem;
+        //    font-style: normal;
+        //    font-weight: 900;
+        //    line-height: normal;
+        //    letter-spacing: 0.2rem;
+        //    text-transform: uppercase;
+        //  }
+        //}
+
+        &-Buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3.6rem;
+
+          .outOfStock-Text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            //background-color: red;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            background-color: rgba(210, 72, 72, 0.7490196078);
+
+            i {
+              font-size: 1.2rem;
+              //color: rgba(210, 72, 72, 0.7490196078);
+              color: #8c1616;
+            }
+
+            p {
+              color: var(--primary-text-black);
+              text-align: center;
+              font-family: "Satoshi", sans-serif;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+              letter-spacing: 0.25rem;
+              text-transform: uppercase;
+            }
+          }
+
+          .delete {
+            font-size: 2.7rem;
+            cursor: pointer;
+            //color: var(--primary-text-black);
+          }
+
+          .ChangeQuantity {
+            display: flex;
+            width: 11.9rem;
+            justify-content: space-between;
+            align-items: center;
+
+            &-sign {
+              display: flex;
+              width: 3rem;
+              height: 3rem;
+              padding: 0rem 1.2rem;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 1rem;
+              flex-shrink: 0;
+
+              border-radius: 5rem;
+              border: 2px solid var(--primary-text-black);
+              cursor: pointer;
+
+              p {
+                color: var(--primary-text-black);
+                font-family: Poppins, sans-serif;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.08rem;
+              }
+            }
+
+            &-value {
+              color: var(--primary-text-black);
+              font-family: Poppins, sans-serif;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: 0.08rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

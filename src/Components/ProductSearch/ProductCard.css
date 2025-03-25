@@ -1,0 +1,323 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
+  flex: 1 0 0;
+  width: 100%;
+  border-radius: 0.2rem;
+  overflow-x: hidden;
+  min-width: 29.1rem;
+  overflow-y: hidden;
+}
+.ProductCard-Star {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--primary-border);
+}
+.ProductCard-Star i {
+  font-size: 1.5rem;
+}
+.ProductCard-Star span {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.16rem;
+  margin-top: 0.1rem;
+  margin-left: 0.5rem;
+}
+.ProductCard .carousel-dots-cont {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.ProductCard .carousel-dots-cont .carousel-dots {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: var(--primary-border);
+}
+.ProductCard-Image {
+  height: 25rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--gray-2);
+  position: relative;
+}
+.ProductCard-Image img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: all 1s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.ProductCard-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 0 0.5rem;
+}
+.ProductCard-Header p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.16rem;
+  cursor: pointer;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ProductCard-Header p:hover {
+  text-decoration: underline;
+}
+.ProductCard-Header h2 {
+  color: #2c2c2c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ProductCard-Header h2:hover {
+  text-decoration: underline;
+}
+.ProductCard-Header .lineClamp1 {
+  -webkit-line-clamp: 1;
+}
+.ProductCard-Header .lineClamp2 {
+  -webkit-line-clamp: 2;
+}
+.ProductCard-Warranty {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.13rem;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ProductCard-Sizes {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+.ProductCard-Sizes .size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: 3.359rem;
+  min-width: 3.359rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary-border);
+  cursor: pointer;
+  padding: 1rem;
+}
+.ProductCard-Sizes .size p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.ProductCard-Sizes .selected {
+  border: 2px solid transparent;
+  background-color: var(--primary-border);
+}
+.ProductCard-Sizes .outOfStock {
+  background-color: rgba(210, 72, 72, 0.749);
+  border: 2px solid rgba(210, 72, 72, 0.749);
+}
+.ProductCard-ButtonCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 2px solid var(--primary-border);
+  flex-grow: 1;
+  padding: 0 0.5rem;
+  padding-top: 1.2rem;
+}
+.ProductCard-ButtonCont-Price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.ProductCard-ButtonCont-Price .mrpCont {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+.ProductCard-ButtonCont-Price p {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.ProductCard-ButtonCont-Price span {
+  color: #9c9c9c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.ProductCard-ButtonCont-Price h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.ProductCard-ButtonCont-Button {
+  display: flex;
+  height: 4.4rem;
+  width: 14.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10rem;
+  border: 2px solid var(--primary-bg-black);
+  overflow: hidden;
+  position: relative;
+}
+.ProductCard-ButtonCont-Button-Options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+.ProductCard-ButtonCont-Button .qtySelector {
+  justify-content: space-between;
+  cursor: auto;
+}
+.ProductCard-ButtonCont-Button .qtySelector .qtyCont {
+  padding: 0 1.5rem;
+  height: 100%;
+  background-color: var(--gray-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.ProductCard-ButtonCont-Button .qtySelector .qtyCont span {
+  color: var(--primary-bg-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  margin-bottom: 0.2rem;
+}
+.ProductCard-ButtonCont-Button p {
+  color: var(--primary-bg-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  margin-top: 0.2rem;
+}
+.ProductCard-ButtonCont-Button i {
+  font-size: 2rem;
+  color: var(--primary-bg-black);
+}
+.ProductCard .outOfStock-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.ProductCard .outOfStock-Text i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.ProductCard .outOfStock-Text p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=ProductCard.css.map */

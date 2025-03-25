@@ -1,0 +1,481 @@
+.Cart {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+}
+.CartWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.6rem;
+  width: 100%;
+}
+.CartWrapper .CartHeader {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-border);
+}
+.CartWrapper .CartHeader h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 5.6rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  gap: 3.6rem;
+}
+.CartWrapper .CartContent-Wrapper .cartEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.6rem;
+  align-self: center;
+  margin: 5rem 0;
+}
+.CartWrapper .CartContent-Wrapper .cartEmpty h2 {
+  color: var(--primary-text-black);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-Wrapper .cartEmpty .shopButton {
+  display: flex;
+  padding: 1.3rem 2.4rem;
+  justify-content: center;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+  background: #ff6d00;
+  cursor: pointer;
+}
+.CartWrapper .CartContent-Wrapper .cartEmpty .shopButton p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CartWrapper .CartContent-Wrapper .cartEmpty .shopButton i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.CartWrapper .CartContent-Wrapper .CartElement {
+  display: flex;
+  align-items: flex-start;
+  gap: 4.8rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Image {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--gray-2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-Header h2:hover {
+  text-decoration: underline;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-Header p {
+  color: rgba(44, 44, 44, 0.5019607843);
+  cursor: pointer;
+  font-family: Satoshi;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.16rem;
+  line-height: normal;
+  text-align: center;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-Header p:hover {
+  text-decoration: underline;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content .description {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  width: 100%;
+  flex-grow: 1;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+  border-radius: 0.2rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Header h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 5rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Main .Element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Main .Element h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0rem;
+  border-bottom: 2px solid var(--highlight-green);
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-ShortContent-Main .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.065rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Price .mrpCont {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Price p {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Price span {
+  color: #9c9c9c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Price h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .outOfStock-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .outOfStock-Text i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .outOfStock-Text p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .delete {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .ChangeQuantity {
+  display: flex;
+  width: 11.9rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: 5rem;
+  border: 2px solid var(--primary-text-black);
+  cursor: pointer;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign p {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CartWrapper .CartContent-Wrapper .CartElement-Content-PriceDetails-Buttons .ChangeQuantity-value {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CartWrapper .CartContent-DataWrapper {
+  display: flex;
+  width: 42rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 2rem;
+  background: #fbfbfb;
+  padding: 0 1rem;
+}
+.CartWrapper .CartContent-DataWrapper .Element {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+}
+.CartWrapper .CartContent-DataWrapper .Element h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  align-self: stretch;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row-data p {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row-data .qty {
+  width: 3.2rem;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row span {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.CartWrapper .CartContent-DataWrapper .Element-Details .Element-row .orderText {
+  font-size: 1.3rem;
+}
+.CartWrapper .CartContent-DataWrapper .Element .CheckoutButton {
+  display: flex;
+  padding: 1.3rem 2.4rem;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+  background: #ff6d00;
+  cursor: pointer;
+}
+.CartWrapper .CartContent-DataWrapper .Element .CheckoutButton p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  width: 100%;
+  text-align: center;
+}
+.CartWrapper .CartContent-DataWrapper .Element .CheckoutButton i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.CartWrapper .CartContent-DataWrapper .disableOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.CartWrapper .CartContent-DataWrapper .disableOut i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.CartWrapper .CartContent-DataWrapper .disableOut p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.CartWrapper .CartContent-DataWrapper .Element-orderSummary {
+  border-bottom: 2px solid var(--primary-border);
+}
+.CartWrapper .CartContent-DataWrapper .Element-finalPrice {
+  border-top: 2px solid var(--primary-border);
+}
+
+/*# sourceMappingURL=Cart.css.map */

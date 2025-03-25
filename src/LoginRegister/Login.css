@@ -1,0 +1,321 @@
+.Login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 5.7rem 21rem 5.7rem 20.9rem;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+}
+.Login-Wrapper {
+  display: flex;
+  width: 100%;
+  padding: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 7.8rem;
+  flex-shrink: 0;
+  height: 100%;
+  border-radius: 5rem;
+  background: #fff;
+}
+.Login-Wrapper-Content {
+  display: flex;
+  padding: 0rem 6.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.7rem;
+  flex: 1 0 0;
+}
+.Login-Wrapper-Content-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  align-self: stretch;
+}
+.Login-Wrapper-Content-Header img {
+  width: 5.8rem;
+  height: 5rem;
+}
+.Login-Wrapper-Content-Header h2 {
+  color: var(--primary-bg-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.64rem;
+  text-transform: capitalize;
+}
+.Login-Wrapper-Content-Header h2 span {
+  color: var(--primary-blue);
+}
+.Login-Wrapper-Content-Header p {
+  color: #5c5c5c;
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+}
+.Login-Wrapper-Content-Header p span {
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+.Login-Wrapper-Content-Header p span:hover {
+  text-decoration: underline;
+}
+.Login-Wrapper-Content-Form {
+  display: flex;
+  padding-top: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.7rem;
+  align-self: stretch;
+}
+.Login-Wrapper-Content-Form .row {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.6rem;
+  align-self: stretch;
+}
+.Login-Wrapper-Content-Form .agree-terms {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  align-self: stretch;
+}
+.Login-Wrapper-Content-Form .agree-terms .checkbox {
+  width: 2.6rem;
+  height: 2rem;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  border: 2px solid var(--primary-text-black);
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.Login-Wrapper-Content-Form .agree-terms .checkbox i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  color: var(--primary-green);
+}
+.Login-Wrapper-Content-Form .agree-terms p {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12rem;
+}
+.Login-Wrapper-Content-Form .agree-terms p span {
+  color: #003f88;
+  cursor: pointer;
+}
+.Login-Wrapper-Content-Form .agree-terms p span:hover {
+  text-decoration: underline;
+}
+.Login-Wrapper-Content-Form-Input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  flex: 1 0 0;
+  width: 100%;
+}
+.Login-Wrapper-Content-Form-Input p {
+  color: var(--primary-text-black);
+  text-align: left;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+.Login-Wrapper-Content-Form-Input p span {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Login-Wrapper-Content-Form-Input .dropdown {
+  border-radius: 0.8rem;
+  border: 2px solid #e4e4e4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.Login-Wrapper-Content-Form-Input .dropdown:hover {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+}
+.Login-Wrapper-Content-Form-Input .dropdown:focus {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+}
+.Login-Wrapper-Content-Form-Input .dropdown .hoverAvailable:hover {
+  background: var(--gray-1);
+}
+.Login-Wrapper-Content-Form-Input .dropdown .dropOtherOptions {
+  position: absolute;
+  top: 110%;
+  border: 2px solid #fbfbfb;
+  left: 0;
+  border-radius: 0.2rem;
+  background: var(--gray-2);
+  width: 100%;
+}
+.Login-Wrapper-Content-Form-Input .dropdownOption {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.Login-Wrapper-Content-Form-Input .dropdownOption p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+  text-transform: capitalize;
+}
+.Login-Wrapper-Content-Form-Input .dropdownOption i {
+  font-size: 1.9rem;
+  color: rgba(44, 44, 44, 0.5);
+  transition: all 0.3s ease;
+}
+.Login-Wrapper-Content-Form-Input textarea,
+.Login-Wrapper-Content-Form-Input input {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 2px solid #e4e4e4;
+  outline: 0;
+  resize: vertical;
+  transition: all 0.2s ease;
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+}
+.Login-Wrapper-Content-Form-Input textarea:hover,
+.Login-Wrapper-Content-Form-Input input:hover {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+}
+.Login-Wrapper-Content-Form-Input textarea:focus,
+.Login-Wrapper-Content-Form-Input input:focus {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+}
+.Login-Wrapper-Content-Form-Input textarea {
+  height: 11rem;
+}
+.Login-Wrapper-Content-Form button {
+  display: flex;
+  padding: 1.2rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: rgba(126, 178, 239, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.Login-Wrapper-Content-Form button p {
+  color: #003f88;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Login-Wrapper-Content-Form button:hover {
+  background-color: rgb(126, 178, 239);
+}
+.Login-Wrapper-Content-Form .link {
+  color: var(--primary-blue);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Login-Wrapper-Carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 3.4rem;
+  height: 100%;
+  width: 68rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.Login-Wrapper-Carousel img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: all 1s ease;
+}
+.Login-Wrapper-Carousel .carousel-dots-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4rem;
+}
+.Login-Wrapper-Carousel .carousel-dots-cont .carousel-dots {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=Login.css.map */

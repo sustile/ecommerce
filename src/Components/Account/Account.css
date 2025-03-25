@@ -1,0 +1,1086 @@
+.Account {
+  width: 100%;
+  height: 100%;
+  padding: 4.1rem 12.8rem;
+}
+.Account .AccountWrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.6rem;
+  flex-shrink: 0;
+  height: calc(100vh - 19.5rem);
+}
+.Account .AccountWrapper .AccountHeader {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountHeader h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 4.8rem;
+  flex: 1 0 0;
+  height: 100%;
+  min-width: 86.4%;
+  height: calc(100% - 3.6rem - 3.6rem);
+}
+.Account .AccountWrapper .AccountContent .AccountOptions {
+  display: flex;
+  width: 29rem;
+  padding: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--gray-1);
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .Element {
+  display: flex;
+  padding: 0.9rem 1.6rem;
+  align-items: center;
+  gap: 1.6rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .Element i {
+  font-size: 1.8rem;
+  color: var(--primary-text-black);
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .selectedOption {
+  border-radius: 0.5rem;
+  background: rgba(126, 178, 239, 0.5);
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .selectedOption i,
+.Account .AccountWrapper .AccountContent .AccountOptions .selectedOption p {
+  color: #003f88;
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .signout {
+  border-radius: 0.5rem;
+  background: rgba(210, 72, 72, 0.75);
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .signout i,
+.Account .AccountWrapper .AccountContent .AccountOptions .signout p {
+  color: #8c1616;
+}
+.Account .AccountWrapper .AccountContent .AccountOptions .bottom {
+  display: flex;
+  padding-top: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  border-top: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  background: #ffffff;
+  overflow-y: auto;
+  padding-left: 0.5rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .AccountMain-Header {
+  border-bottom: none !important;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .Element {
+  display: flex;
+  padding: 0.9rem 2.4rem;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .Element i {
+  font-size: 1.6rem;
+  color: var(--primary-text-black);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .selectedOption {
+  border-radius: 0.5rem;
+  background: rgba(126, 178, 239, 0.5);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .selectedOption i,
+.Account .AccountWrapper .AccountContent .AccountMain-MainHeader .selectedOption p {
+  color: #003f88;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-Header {
+  display: flex;
+  padding-bottom: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-Header p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain .addAddressForm {
+  padding: 2.4rem;
+  background-color: var(--gray-2);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer {
+  display: flex;
+  padding-top: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  align-self: stretch;
+  height: 100%;
+  flex-grow: 1;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.6rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  flex: 1 0 0;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer p {
+  color: var(--primary-text-black);
+  text-align: left;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer p span {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdown {
+  border-radius: 0.8rem;
+  border: 2px solid #e4e4e4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdown:hover {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdown:focus {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdown .hoverAvailable:hover {
+  background: var(--gray-1);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdown .dropOtherOptions {
+  position: absolute;
+  top: 110%;
+  border: 2px solid #fbfbfb;
+  left: 0;
+  border-radius: 0.2rem;
+  background: var(--gray-2);
+  width: 100%;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdownOption {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdownOption p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+  text-transform: capitalize;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer .dropdownOption i {
+  font-size: 1.9rem;
+  color: rgba(44, 44, 44, 0.5);
+  transition: all 0.3s ease;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer textarea,
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer input {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 2px solid #e4e4e4;
+  outline: 0;
+  resize: vertical;
+  transition: all 0.2s ease;
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer textarea:hover,
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer input:hover {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer textarea:focus,
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer input:focus {
+  border: 2px solid rgba(126, 178, 239, 0.8);
+  box-shadow: 0px 0px 7px 0 rgba(126, 178, 239, 0.7);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-FormContainer .row .InputContainer textarea {
+  height: 11rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  margin-top: 2.4rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .selectedAddress {
+  background: var(--gray-1);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .confirmationAddress {
+  cursor: none;
+  padding: 0;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer-AddAddress {
+  display: flex;
+  padding: 1.2rem 0rem 2.4rem 0rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer-AddAddress p {
+  color: var(--primary-blue);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-gap {
+  height: 2.4rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-Header i {
+  font-size: 2rem;
+  color: #d24848;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-Header .checkbox {
+  display: flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  border: 2px solid var(--primary-text-black);
+  background: #fff;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address-Header .checkbox i {
+  font-size: 1.4rem;
+  color: var(--primary-green);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address span {
+  color: rgba(44, 44, 44, 0.75);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-AddressContainer .AccountMain-Address p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer {
+  display: flex;
+  padding: 2.4rem 0rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement {
+  display: flex;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  align-self: stretch;
+  border-radius: 0.2rem;
+  background: var(--gray-1);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Header {
+  display: flex;
+  padding-bottom: 1.2rem;
+  align-items: flex-start;
+  gap: 0.4rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Header-Element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  flex: 1 0 0;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Header-Element span {
+  color: rgba(44, 44, 44, 0.75);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Header-Element p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Header .Left {
+  align-items: flex-end;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 5rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-LeftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.2rem;
+  flex-grow: 1;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-LeftWrapper-Bottom {
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-LeftWrapper-Bottom h2 {
+  color: rgba(44, 44, 44, 0.75);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-LeftWrapper-Bottom p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.07rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 100%;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.2rem;
+  border: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: stretch;
+  justify-content: center;
+  width: 100%;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Top {
+  display: flex;
+  padding-bottom: 0.6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+  width: 100%;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Top h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Top p {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Bottom {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Bottom-Left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Bottom-Left h2 {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Bottom-Left p {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Left-Details-Bottom span {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right {
+  display: flex;
+  width: 24.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right .downloadInvoice {
+  background: rgba(126, 178, 239, 0.5);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right .downloadInvoice p {
+  color: var(--primary-blue);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right .cancelOrder {
+  background: rgba(210, 72, 72, 0.75);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right .cancelOrder p {
+  color: #8c1616;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right button {
+  display: flex;
+  padding: 0.9rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--gray-2);
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-OrderContainer-OrderElement-Container-Right button p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.07rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk {
+  display: flex;
+  padding-top: 2.4rem;
+  align-items: flex-start;
+  gap: 5.2rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact {
+  display: flex;
+  width: 32.7rem;
+  padding: 2.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--gray-1);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Header {
+  display: flex;
+  padding-bottom: 0.8rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  border-bottom: 2px solid var(--primary-border);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Header h2 {
+  color: rgba(44, 44, 44, 0.75);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Element h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Element p {
+  color: var(--primary-blue);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.13rem;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Element-Office-Country {
+  color: rgba(44, 44, 44, 0.75) !important;
+  text-align: center !important;
+  font-family: "Satoshi", sans-serif !important;
+  font-size: 1.1rem !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  line-height: normal !important;
+  letter-spacing: 0.24rem !important;
+  text-transform: uppercase !important;
+  cursor: auto !important;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-HelpDesk-Contact-Element span {
+  color: rgba(44, 44, 44, 0.5);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.13rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer {
+  display: flex;
+  padding-top: 2.4rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+  flex-grow: 1;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  align-self: stretch;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .cancel {
+  background-color: rgba(210, 72, 72, 0.75);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .cancel p {
+  color: #8c1616;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .cancel:hover {
+  background-color: rgba(210, 72, 72, 0.85);
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .confirm {
+  background-color: #7eb2ef;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer .confirm p {
+  color: #003f88;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer button {
+  display: flex;
+  padding: 1.2rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: rgba(126, 178, 239, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer button p {
+  color: #003f88;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Account .AccountWrapper .AccountContent .AccountMain-ButtonContainer button:hover {
+  background-color: rgb(126, 178, 239);
+}
+.Account .CheckoutCart-CartElement {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.8rem;
+  align-self: stretch;
+  padding: 0.7rem 0;
+}
+.Account .CheckoutCart-CartElement-Image {
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--gray-2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.Account .CheckoutCart-CartElement-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Account .CheckoutCart-CartElement-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.Account .CheckoutCart-CartElement-Content-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  align-self: stretch;
+}
+.Account .CheckoutCart-CartElement-Content-Header h2 {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Account .CheckoutCart-CartElement-Content-Header h2:hover {
+  text-decoration: underline;
+}
+.Account .CheckoutCart-CartElement-Content-Header p {
+  color: rgba(44, 44, 44, 0.5019607843);
+  cursor: pointer;
+  font-family: Satoshi;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.16rem;
+  line-height: normal;
+  text-align: center;
+}
+.Account .CheckoutCart-CartElement-Content-Header p:hover {
+  text-decoration: underline;
+}
+.Account .CheckoutCart-CartElement-Content .description {
+  color: rgba(44, 44, 44, 0.8);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  width: 100%;
+  flex-grow: 1;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+  border-radius: 0.2rem;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  align-self: stretch;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Header h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 5rem;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Main .Element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Main .Element h2 {
+  color: rgba(44, 44, 44, 0.5);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0rem;
+  border-bottom: 2px solid var(--highlight-green);
+}
+.Account .CheckoutCart-CartElement-Content-ShortContent-Main .Element p {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.065rem;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--primary-border);
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Price .mrpCont {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Price p {
+  color: var(--primary-green);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Price span {
+  color: #9c9c9c;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Price h2 {
+  color: var(--primary-text-black);
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-qty {
+  color: rgba(44, 44, 44, 0.5019607843);
+  font-family: Satoshi, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.24rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(210, 72, 72, 0.7490196078);
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text i {
+  font-size: 1.2rem;
+  color: #8c1616;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .outOfStock-Text p {
+  color: var(--primary-text-black);
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .delete {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity {
+  display: flex;
+  width: 11.9rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: 5rem;
+  border: 2px solid var(--primary-text-black);
+  cursor: pointer;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-sign p {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Account .CheckoutCart-CartElement-Content-PriceDetails-Buttons .ChangeQuantity-value {
+  color: var(--primary-text-black);
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+
+/*# sourceMappingURL=Account.css.map */

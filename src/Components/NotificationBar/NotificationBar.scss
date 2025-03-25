@@ -1,0 +1,121 @@
+.NotificationBar {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: 100;
+
+  .NotificationWrapper {
+    // width: 80%;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--gray-3);
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    padding-bottom: 1.2rem;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+    i {
+      font-size: 2rem;
+      color: var(--primary-text-black);
+      cursor: pointer;
+    }
+
+    //.dot {
+    //  height: 0.6rem;
+    //  width: 0.6rem;
+    //  background-color: #adadad;
+    //  border-radius: 1rem;
+    //  background-color: red;
+    //}
+
+    p {
+      font-family: "Satoshi", sans-serif;
+      font-size: 1.1rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0.18rem;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      color: var(--primary-text-black);
+    }
+    .closeNotis {
+      color: rgba(210, 72, 72, 0.949);
+      font-size: 2rem;
+      //margin-left: 1rem;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      display: inline-block;
+      width: 0%;
+      //width: 100%;
+      height: 0.3rem;
+      //background-color: #ef233c;
+      background-color: rgba(210, 72, 72, 1);
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      animation: notisBar 5s ease-in-out;
+    }
+
+    .someWrong {
+      color: #ef233c;
+    }
+  }
+
+  .green {
+    background-color: rgba(45, 106, 79, 0.34) !important;
+
+    i {
+      color: var(--primary-green);
+    }
+
+    p {
+      color: var(--primary-green);
+    }
+  }
+
+  .yellow {
+    background-color: rgba(243, 157, 44, 0.38) !important;
+
+    i {
+      color: #f3722c;
+    }
+
+    p {
+      color: #f3722c;
+    }
+  }
+
+  .red {
+    background-color: rgba(210, 72, 72, 0.549) !important;
+
+    i {
+      color: rgba(210, 72, 72, 0.949);
+    }
+
+    p {
+      color: rgba(210, 72, 72, 0.949);
+    }
+  }
+
+  @keyframes notisBar {
+    0% {
+      width: 100%;
+    }
+
+    100% {
+      width: 0%;
+    }
+  }
+}

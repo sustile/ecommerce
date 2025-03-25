@@ -1,0 +1,144 @@
+.Nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  background-color: rgba(20, 20, 20, 0.97);
+  padding: 1rem 5rem;
+}
+.Nav-TopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.Nav-TopBar-LogoCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-grow: 1;
+}
+.Nav-TopBar-LogoCont img {
+  cursor: pointer;
+  object-fit: contain;
+}
+.Nav-TopBar-LogoCont-SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  border-radius: 1rem;
+  width: 100%;
+}
+.Nav-TopBar-LogoCont-SearchBar input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  padding: 1rem 2.4rem;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  padding-right: 0;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+}
+.Nav-TopBar-LogoCont-SearchBar input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.Nav-TopBar-LogoCont-SearchBar .searchIcon {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem 1.4rem;
+  cursor: pointer;
+  background: none;
+}
+.Nav-TopBar-Button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.Nav-TopBar-Button .HoverBtn {
+  cursor: pointer;
+}
+.Nav-TopBar-Button .HoverBtn:hover {
+  background: #2c2c2c;
+  box-shadow: rgba(54, 51, 51, 0.85) 0px 7px 29px 0px;
+}
+.Nav-TopBar-Button .Btn {
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.Nav-TopBar-Button .Btn-TextBox {
+  display: flex;
+  flex-direction: column;
+}
+.Nav-TopBar-Button .Btn i {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.Nav-TopBar-Button .Btn .account-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.62);
+}
+.Nav-TopBar-Button .Btn p {
+  color: #fff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+}
+.Nav-TopBar-Button .Btn .cartCounter {
+  color: #e48040;
+}
+.Nav-BottomBar {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Nav-BottomBar .selectedOption {
+  background: #2c2c2c;
+  box-shadow: rgba(54, 51, 51, 0.85) 0px 2px 29px 0px;
+}
+.Nav-BottomBar-Option {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Nav-BottomBar-Option p {
+  color: #fff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+.Nav-BottomBar-Option i {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.Nav-BottomBar-Option:hover {
+  box-shadow: rgba(54, 51, 51, 0.85) 0px 2px 29px 0px;
+}
+
+/*# sourceMappingURL=Nav.css.map */
